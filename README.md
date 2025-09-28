@@ -1,18 +1,64 @@
-# Salesforce DX Project: Next Steps
+🛠️ Customer Complaint CRM (Salesforce Project)
+Dmeo Link:
+https://docs.google.com/videos/d/1Y5TlvDNivEiZJvUFoDmFURLWzI_Ln8EddHlLJHQ19VE/edit?usp=sharing
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
 
-## How Do You Plan to Deploy Your Changes?
+📌 Overview
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+The Customer Complaint CRM is a Salesforce-based solution designed to help organizations efficiently track, manage, and resolve customer complaints.
+It automates complaint assignment, ensures SLA tracking, prevents duplicates, and provides managers with real-time visibility through dashboards and reports.
 
-## Configure Your Salesforce DX Project
+This project is built step-by-step for beginners, showcasing Salesforce customization, automation, Apex, and Lightning Web Components (LWC).
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+🎯 Objectives
 
-## Read All About It
+Centralize customer complaints in Salesforce.
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+Automate assignment, SLA due dates, and escalation.
+
+Enforce data validation rules (e.g., no closing without resolution).
+
+Provide dashboards for managers to monitor open and high-priority complaints.
+
+Allow customers to submit complaints via Experience Cloud or LWC.
+
+Demonstrate Apex triggers, asynchronous jobs, and flows.
+
+⚙️ Features
+Core Features
+
+Complaint tracking with fields: Type, Priority, Status, Assigned Agent, SLA Due Date, Resolution.
+
+Prevent duplicate complaints for the same customer and type.
+
+Auto-assign agent & calculate SLA due date via Flows.
+
+Escalate overdue complaints automatically.
+
+Email/SMS notifications on complaint updates.
+
+Security & Access
+
+Role hierarchy: Manager > Agent.
+
+Permission sets: Control access to complaints and resolution fields.
+
+Sharing rules: Managers can view agents’ complaints.
+
+Validation rules: Prevent incomplete or incorrect complaint submissions.
+
+Reports & Dashboards
+
+KPI: Number of Open Complaints.
+
+Bar/Pie Chart: Complaints by Branch.
+
+Table: High-priority unresolved complaints.
+
+Advanced
+
+Apex Trigger: Prevents duplicate open complaints.
+
+Asynchronous Queueable Apex: Sends acknowledgment emails.
+
+Lightning Web Component (LWC): User-friendly complaint submission form.
